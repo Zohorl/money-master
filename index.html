@@ -27,47 +27,55 @@
                     <!-- Income -->
                     <div class="text-center">
                         <h3>Income</h3>
-                        <h4 class="mt-4 mb-4">Income : <input
-                                class="w-75 bg-secondary bg-opacity-25 px-5 py-1 rounded fs-5" type="text">
+                        <h4 class="mt-4 mb-4">Income : <input id="income-input"
+                                class="w-50 bg-secondary bg-opacity-25 px-5 py-1 rounded fs-5" type="text">
                         </h4>
                     </div>
                     <!-- Expenses -->
                     <div class="text-center">
                         <h3 class="mb-4">Expenses</h3>
-                        <h4 class="mb-4">Food : <input class="w-75 bg-secondary bg-opacity-25 px-5 py-1 rounded fs-5"
-                                type="text">
+                        <h4 class="mb-4">Food : <input id="food-input"
+                                class="w-50 bg-secondary bg-opacity-25 px-5 py-1 rounded fs-5" type="text">
                         </h4>
-                        <h4 class="mb-4">Rent : <input class="w-75 bg-secondary bg-opacity-25 px-5 py-1 rounded fs-5"
-                                type="text">
+                        <h4 class="mb-4">Rent : <input id="rent-input"
+                                class="w-50 bg-secondary bg-opacity-25 px-5 py-1 rounded fs-5" type="text">
                         </h4>
-                        <h4 class="mb-4">Clothes : <input class="w-75 bg-secondary bg-opacity-25 px-5 py-1 rounded fs-5"
-                                type="text">
+                        <h4 class="mb-4">Clothes : <input id="clothes-input"
+                                class="w-50 bg-secondary bg-opacity-25 px-5 py-1 rounded fs-5" type="text">
                         </h4>
                     </div>
                     <!-- Calculate button -->
                     <div class="text-center">
-                        <button class="bg-primary text-white bg-opacity-75 px-5 py-1 rounded">Calculate</button>
+                        <button id="calculate-button"
+                            class="bg-primary text-white bg-opacity-75 px-5 py-1 rounded">Calculate</button>
                     </div>
                     <!-- Total Expenses & Balance -->
                     <div class="text-center">
-                        <h4 class="mb-4 mt-4">Total Expenses :<span>0</span></h4>
-                        <h4 class="mb-4">Balance :<span>0</span></h4>
+                        <h4 class="mb-4 mt-4">Total Expenses :<span id="total-expenses">0</span></h4>
+                        <h4 class="mb-4">Balance :<span id="balance">0</span></h4>
                     </div>
                     <!-- Save -->
                     <div class="text-center">
-                        <h4>Save : <input class="w-25 bg-secondary bg-opacity-25 px-5 py-1 rounded fs-5"
+                        <h4>Save : <input id="save-input" class="w-25 bg-secondary bg-opacity-25 px-5 py-1 rounded fs-5"
                                 type="text"></span>
-                            % <button class="bg-primary text-white bg-opacity-75 px-5 py-1 rounded">Save</button> </h4>
+                            % <button id="save-button"
+                                class="bg-primary text-white bg-opacity-75 px-5 py-1 rounded">Save</button> </h4>
                     </div>
                     <!-- Saving & Remaining Balance -->
                     <div class="text-center mt-4">
-                        <h4 class="mb-3">Saving Amount : <span>0</span>
-                            <h4>Remaining Balance : <span>0</span>
-                            </h4>
+                        <h4 class="mb-3">Saving Amount : <span id="saving-amount">0</span></h4>
+                        <h4>Remaining Balance : <span id="remaining-balance">0</span>
+                        </h4>
                     </div>
                 </div>
 
             </div>
+            <section class="container text-center">
+                <h5 id="negetive-message" class="notify">Negetive numbers are not allow</h5>
+                <h5 id="empty-message" class="notify">Input can not be empty</h5>
+                <h5 id="expenses-message" class="notify">Income can not be less than total expenses</h5>
+                <h5 id="balance-message" class="notify">Balance is not less than saving amount</h5>
+            </section>
         </section>
     </main>
 
